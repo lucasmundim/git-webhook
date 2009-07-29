@@ -1,6 +1,26 @@
 = git-webhook
 
-Description goes here.
+* http://github.com/lucasmundim/git-webhook
+
+== DESCRIPTION:
+
+Use it with a {git}[http://git-scm.com] post-receive hook script
+to post JSON data to a web hook capable server.
+
+This implements the {GitHub}[http://github.com] {Web hooks}[http://github.com/guides/post-receive-hooks]
+as closely as possible.
+
+This script works with almost every application that supports github
+style notification.
+
+== REQUIREMENTS:
+
+* Grit (http://grit.rubyforge.org)
+* Active Support (http://git-scm.com)
+
+== INSTALL:
+
+* sudo gem install git-webhook
 
 == Copyright
 

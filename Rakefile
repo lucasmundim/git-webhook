@@ -5,11 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "git-webhook"
-    gem.summary = %Q{A github compatible post-receive git web hook written in ruby}
-    gem.email = "lucas.mundim@gmail.com"
+    gem.summary = %Q{A github compatible post-receive web hook for git written in Ruby}
+    gem.email = "lucas.mundim@intelitiva.com"
     gem.homepage = "http://github.com/lucasmundim/git-webhook"
     gem.authors = ["Lucas Roxo Mundim"]
     gem.rubyforge_project = "git-webhook"
+    gem.add_dependency('grit', '>= 1.1.1')
+    gem.add_dependency('active_support', '>= 2.3.3')
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 
@@ -21,6 +23,7 @@ end
 require 'spec/rake/spectask'
 Spec::Rake::SpecTask.new(:spec) do |spec|
   spec.libs << 'lib' << 'spec'
+  spec.spec_opts = ['--options', "spec/spec.opts"]
   spec.spec_files = FileList['spec/**/*_spec.rb']
 end
 
@@ -47,4 +50,3 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
-
