@@ -1,0 +1,7 @@
+= git-webhook
+
+Description goes here.
+
+== Copyright
+
+Copyright (c) 2009 Lucas Roxo Mundim. See LICENSE for details.
