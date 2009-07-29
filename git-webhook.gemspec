@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{git-webhook}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Lucas Roxo Mundim"]
@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION.yml",
+     "git-webhook.gemspec",
      "lib/git-webhook.rb",
      "lib/git-webhook/builder.rb",
      "lib/git-webhook/core.rb",
